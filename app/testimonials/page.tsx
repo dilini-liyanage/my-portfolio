@@ -22,15 +22,14 @@ import Link from 'next/link';
 const TestimonialCard: React.FC<Testimonial> = ({
   content,
   link,
+  company,
+  projects,
   author,
   role,
   avatar,
   date,
-  rating,
-  platform,
   verificationStatus,
   projectType,
-  country,
 }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const contentRef = useRef<HTMLParagraphElement>(null);
@@ -50,8 +49,7 @@ const TestimonialCard: React.FC<Testimonial> = ({
         <div className="absolute -right-12 -top-12 h-32 w-32 rotate-45 bg-gradient-to-br from-bgPrimary/20 to-transparent blur-2xl" />
         <div className="absolute -bottom-12 -left-12 h-32 w-32 rotate-45 bg-gradient-to-tr from-Secondary/20 to-transparent blur-2xl" />
 
-        <CardContent className="relative flex h-full flex-col justify-between gap-6 p-8">
-          <Meteors number={15} />
+        <CardContent className="relative flex h-full flex-col justify-between gap-3 p-8">
           <div className="absolute inset-0 opacity-[0.3]">
             <div className="absolute left-4 top-4">
               <Code2 className="h-4 w-4" />
@@ -92,35 +90,14 @@ const TestimonialCard: React.FC<Testimonial> = ({
                     verificationStatus.slice(1)}
                 </span>
               </div>
-              <div className="flex gap-1">
-                {[...Array(5)].map((_, i) => (
-                  <svg
-                    key={i}
-                    className={`h-4 w-4 ${
-                      i < rating ? 'text-Secondary' : 'text-gray-300'
-                    }`}
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                  </svg>
-                ))}
-              </div>
-            </div>
-
-            <div className="flex gap-2">
-              <span className="rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-600 dark:bg-gray-800 dark:text-gray-300">
-                {platform}
-              </span>
               <span className="rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-600 dark:bg-gray-800 dark:text-gray-300">
                 {projectType}
               </span>
             </div>
-
             <div className="relative">
               <p
                 ref={contentRef}
-                className={`relative z-10 max-h-[15rem] text-lg leading-relaxed text-gray-700 transition-all duration-300 dark:text-gray-200 ${
+                className={`relative z-10 max-h-[14rem] text-sm leading-relaxed text-gray-700 transition-all duration-300 dark:text-gray-200 ${
                   isExpanded ? 'overflow-y-auto' : 'overflow-hidden'
                 }`}
               >
@@ -140,16 +117,6 @@ const TestimonialCard: React.FC<Testimonial> = ({
                 </button>
               )}
             </div>
-            {/* {link && (
-              <Link
-                href={link}
-                className="text-blue-500"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View on {platform}
-              </Link>
-            )} */}
           </div>
 
           <div className="border-t border-gray-100 pt-6 dark:border-gray-800">
@@ -160,7 +127,7 @@ const TestimonialCard: React.FC<Testimonial> = ({
                   alt={author}
                   width={56}
                   height={56}
-                  className="rounded-full border-2 border-gray-50 shadow-sm"
+                  className="h-12 w-12 rounded-full border-2 border-gray-50 shadow-sm"
                 />
               )}
               {!avatar && (
@@ -169,12 +136,15 @@ const TestimonialCard: React.FC<Testimonial> = ({
                 </div>
               )}
               <div>
-                <h3 className="font-semibold text-gray-800 dark:text-gray-200">
-                  {author} {country ? `(${country})` : ''}
+                <h3 className="text-sm font-semibold text-gray-800 dark:text-gray-200">
+                  {author}
                 </h3>
 
                 <p className="text-sm text-gray-600 dark:text-gray-400">
                   {role}
+                </p>
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  {company}
                 </p>
                 <p className="mt-1 text-xs text-gray-400">
                   {new Date(date).toLocaleDateString('en-US', {
@@ -219,9 +189,9 @@ const ClientTestimonialsCarousel: React.FC = () => {
   }, [api]);
 
   return (
-    <section className="relative flex min-h-screen flex-col justify-center pt-40 dark:bg-background md:pt-0">
+    <section className="relative flex min-h-screen flex-col justify-center pt-36 dark:bg-background md:pt-0">
       <div className="container mx-auto px-4">
-        <h2 className="mb-16 text-center">
+        <h2 className="mb-12 text-center">
           <span className="bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-4xl font-bold text-transparent dark:text-gray-200 sm:text-5xl">
             What people say about me
           </span>
@@ -241,16 +211,16 @@ const ClientTestimonialsCarousel: React.FC = () => {
             {testimonials.map((testimonial, index) => (
               <CarouselItem
                 key={index}
-                className="pl-2 md:basis-1/2 md:pl-4 lg:basis-1/3"
+                className="px-5 pl-2 md:basis-1/2 md:pl-4 lg:basis-1/3"
               >
                 <TestimonialCard
                   content={testimonial.content}
                   author={testimonial.author}
                   role={testimonial.role}
+                  company={testimonial.company}
                   avatar={testimonial.avatar}
                   date={testimonial.date}
                   rating={testimonial.rating}
-                  platform={testimonial.platform}
                   verificationStatus={
                     testimonial.verificationStatus as
                       | 'verified'
@@ -258,7 +228,7 @@ const ClientTestimonialsCarousel: React.FC = () => {
                       | 'unverified'
                   }
                   projectType={testimonial.projectType}
-                  country={testimonial.country}
+                  projects={testimonial.projects}
                   link={testimonial.link}
                 />
               </CarouselItem>
