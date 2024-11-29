@@ -99,7 +99,7 @@ const HeroSection = () => {
               </div>
               <BoxReveal boxColor={'#df7ee0'} duration={0.5}>
                 <div className="text-3xl font-semibold uppercase text-Secondary sm:text-4xl md:text-5xl lg:text-[5rem]">
-                  Dilini Liyanage
+                  Dilini Liyanage 2
                 </div>
               </BoxReveal>
             </div>
