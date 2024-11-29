@@ -99,16 +99,15 @@ const HeroSection = () => {
               </div>
               <BoxReveal boxColor={'#df7ee0'} duration={0.5}>
                 <div className="text-3xl font-semibold uppercase text-Secondary sm:text-4xl md:text-5xl lg:text-[5rem]">
-                  Dilini Liyanage 2
+                  Dilini Liyanage
                 </div>
               </BoxReveal>
             </div>
             <div className="text-sm text-gray-500 dark:text-gray-400 sm:text-base">
-              Dedicated to creating impactful digital experiences{' '}
-              <br className="hidden sm:block" /> through clean code and
-              thoughtful design.
-              <br className="hidden sm:block" /> Every project is an opportunity
-              to innovate and excel.
+              Creating impactful digital experiences through{' '}
+              <br className="hidden sm:block" /> clean code and design.
+              <br className="hidden sm:block" /> Each project is a chance to
+              innovate, inspire, and deliver excellence.
             </div>
 
             <div className="flex gap-4">

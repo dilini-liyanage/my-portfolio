@@ -65,7 +65,7 @@ const SkillsSection: React.FC = () => {
                   </div>
 
                   {/* Proficiency bar */}
-                  {hoveredSkill === skill.name && (
+                  {/* {hoveredSkill === skill.name && (
                     <motion.div
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
@@ -78,7 +78,7 @@ const SkillsSection: React.FC = () => {
                         className="h-full bg-Secondary"
                       />
                     </motion.div>
-                  )}
+                  )} */}
                 </a>
               </motion.div>
             ))}
@@ -86,7 +86,7 @@ const SkillsSection: React.FC = () => {
         </motion.div>
 
         {/* Skill statistics */}
-        <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4">
+        {/* <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4">
           {skillCategories.slice(1).map((category) => {
             const categorySkills = skills.filter((skill) =>
               skill.category.includes(category)
@@ -117,7 +117,7 @@ const SkillsSection: React.FC = () => {
               </div>
             );
           })}
-        </div>
+        </div> */}
       </div>
     </div>
   );

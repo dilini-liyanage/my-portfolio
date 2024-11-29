@@ -11,27 +11,13 @@ type Education = {
 };
 
 function AboutMeSection() {
-  const Education: Education[] = [
-    {
-      duration: 'Expected in 2025',
-      institute: 'University of Moratuwa',
-      subject: 'BSc (Hons.) in Information Technology',
-      result: 'CGPA - 3.18',
-    },
-    {
-      duration: '2019',
-      institute: 'G.C.E. Advance Level',
-      subject: 'Physical Science Stream',
-      result: "1 A , 2 B's",
-    },
-  ];
   return (
     <div>
       <div className="grid grid-cols-12">
         <div className="col-span-12 md:col-span-4">
           <div className="inset-0 z-10 flex justify-center transition-opacity duration-300">
             <Image
-              src="/sampath.png"
+              src="/dilini-pp.png"
               alt="hero"
               className="h-60 w-auto rounded-full"
               width={600}

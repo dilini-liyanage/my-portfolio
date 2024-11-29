@@ -73,10 +73,10 @@ const HeroSection: React.FC = () => {
           <TypingAnimation
             className="mt-2 text-start text-xl text-black dark:text-white sm:text-2xl"
             texts={[
-              'a fast learner',
               'a good communicator',
               'a problem solver',
               'a team player',
+              'a committed worker',
             ]}
           />
           <div className="mt-20 flex w-full flex-col gap-4 md:gap-8">

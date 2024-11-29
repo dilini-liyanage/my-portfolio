@@ -54,17 +54,17 @@ function TimelineCard({
         whileHover={{ scale: 1.02 }}
         className="group rounded-lg border border-gray-200 bg-white p-6 shadow-lg transition-all dark:border-gray-800 dark:bg-gray-900"
       >
-        <div className="mb-2 text-sm font-medium text-Secondary">
+        <div className="mb-2 text-sm font-light text-Secondary">
           {experience.duration}
         </div>
-        <h3 className="mb-1 text-xl font-semibold transition-colors group-hover:text-Secondary">
+        <h3 className="mb-1 text-xl font-medium transition-colors group-hover:text-Secondary">
           {experience.position}
         </h3>
         <a
           href={experience.companyLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-gray-600 hover:text-Secondary dark:text-gray-400"
+          className="text-sm text-gray-600 hover:text-Secondary dark:text-gray-400"
         >
           {experience.company} . {experience.mode}
         </a>
@@ -77,7 +77,7 @@ function TimelineCard({
               initial={{ opacity: 0, scale: 0.8 }}
               animate={inView ? { opacity: 1, scale: 1 } : {}}
               transition={{ delay: index * 0.2 + skillIndex * 0.1 }}
-              className="rounded-full bg-gray-100 px-3 py-1 text-sm text-gray-800 dark:bg-gray-800 dark:text-gray-200"
+              className="rounded-full bg-gray-100 px-3 py-1 text-xs text-gray-800 dark:bg-gray-800 dark:text-gray-200"
             >
               {skill.name}
             </motion.span>

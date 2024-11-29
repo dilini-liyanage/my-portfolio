@@ -31,6 +31,22 @@ function TimeLineExperienceSection() {
       ],
     },
     {
+      duration: 'Jan 2024 - Present',
+      position: 'Freelance Web Developer',
+      company: 'Part-time',
+      mode: 'Onsite',
+      skills: [
+        { name: 'Serverless' },
+        { name: 'NodeJs' },
+        { name: 'NextJs' },
+        { name: 'MongoDB' },
+        { name: 'AWS' },
+        { name: 'TailwindCSS' },
+        { name: 'Boostrap' },
+        { name: 'ShadeCN' },
+      ],
+    },
+    {
       duration: 'Mar 2020 - Jun 2021',
       position: 'IT Assistant',
       company: 'Ocnet e Solutions, Aranayake Rd, Alupotha, Ussapitiya ',
