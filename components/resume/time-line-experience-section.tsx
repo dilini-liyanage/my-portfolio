@@ -14,7 +14,7 @@ function TimeLineExperienceSection() {
     {
       duration: 'Jan 2024 - Aug 2024',
       position: 'Software Engineer Intern',
-      company: 'LiveRoom · Full-time',
+      company: 'LiveRoom Technologies (Pvt) Ltd. · Full-time',
       mode: 'Onsite',
       companyLink: 'https://www.liveroom.xyz/',
       skills: [
@@ -70,7 +70,7 @@ function TimeLineExperienceSection() {
         learning, and innovation.
       </div>
 
-      <div className="w-full overflow-x-hidden px-4 pb-20 md:h-[35rem] md:overflow-y-auto md:pb-0">
+      <div className="w-full overflow-x-hidden px-4 pb-20 md:h-[34rem] md:overflow-y-auto md:pb-0">
         <InteractiveTimeline experiences={Experience} />
       </div>
     </div>

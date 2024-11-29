@@ -79,7 +79,7 @@ const HeroSection: React.FC = () => {
               'a committed worker',
             ]}
           />
-          <div className="mt-20 flex w-full flex-col gap-4 md:gap-8">
+          <div className="mt-12 flex w-full flex-col gap-4 md:gap-8">
             {ResumeSubSection.map((item, index) => (
               <button key={index} onClick={() => setSelectedSection(item.name)}>
                 <MagicCard

@@ -11,7 +11,7 @@ export function InteractiveTimeline({ experiences }: Timeline) {
       <div className="absolute left-0 top-0 h-full w-0.5 bg-gradient-to-b from-Secondary/50 to-Secondary" />
 
       {/* Experience cards */}
-      <div className="space-y-12">
+      <div className="space-y-8">
         {experiences.map((experience, index) => (
           <TimelineCard key={index} experience={experience} index={index} />
         ))}
@@ -54,10 +54,10 @@ function TimelineCard({
         whileHover={{ scale: 1.02 }}
         className="group rounded-lg border border-gray-200 bg-white p-6 shadow-lg transition-all dark:border-gray-800 dark:bg-gray-900"
       >
-        <div className="mb-2 text-sm font-light text-Secondary">
+        <div className="mb-2 text-xs font-light text-Secondary">
           {experience.duration}
         </div>
-        <h3 className="mb-1 text-xl font-medium transition-colors group-hover:text-Secondary">
+        <h3 className="text-xl font-medium transition-colors group-hover:text-Secondary">
           {experience.position}
         </h3>
         <a
@@ -70,7 +70,7 @@ function TimelineCard({
         </a>
 
         {/* Skills tags */}
-        <div className="mt-4 flex flex-wrap gap-2">
+        <div className="mt-3 flex flex-wrap gap-2">
           {experience.skills.map((skill, skillIndex) => (
             <motion.span
               key={skillIndex}

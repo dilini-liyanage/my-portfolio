@@ -3,10 +3,10 @@ import { FaDotCircle } from 'react-icons/fa';
 
 type Education = {
   duration: string;
-  institute: string;
+  institute?: string;
   subject: string;
   stream?: string;
-  result: string;
+  result?: string;
 };
 
 function EducationSection() {
@@ -19,9 +19,9 @@ function EducationSection() {
     },
     {
       duration: '2020',
-      institute: 'Ocnet e Solutions',
+      institute: 'Vocational Training Authority, Sri Lanka',
       subject: 'Information Communication Technology Technician',
-      result: 'NVQ Level 4',
+      result: ' NVQ Level 4',
     },
     {
       duration: '2019',
@@ -40,10 +40,11 @@ function EducationSection() {
   return (
     <div>
       <div className="text-fontGray">
-        My academic journey, spanning over 4 years, has been a journey of
-        growth, learning, and innovation.
+        My education reflects a continuous journey of learning and growth,
+        building the knowledge and skills essential for my professional
+        development.
       </div>
-      <div className="mx-4 max-w-2xl py-12">
+      <div className="mx-4 max-w-3xl py-8">
         <div className="relative border-l-4 border-Secondary py-0 pl-8">
           <div className="mb-0 space-y-8">
             {Education.map((item, index) => (
@@ -53,13 +54,13 @@ function EducationSection() {
                   <FaDotCircle className="mt-1 h-3 w-3 text-Secondary" />
                 </div>
 
-                <p className="mb-2 text-sm text-Secondary">{item.duration}</p>
-                <h3 className="text-xl font-medium">{item.subject}</h3>
+                <p className="mb-2 text-xs text-Secondary">{item.duration}</p>
+                <h3 className="text-lg font-medium">{item.subject}</h3>
                 <p className="text-md mb-2 font-normal">{item.institute}</p>
                 {item.stream && (
-                  <p className="text-md text-fontGray">{item.stream}</p>
+                  <p className="text-sm text-fontGray">{item.stream}</p>
                 )}
-                <p className="text-md text-fontGray">{item.result}</p>
+                <p className="text-sm text-fontGray">{item.result}</p>
               </div>
             ))}
           </div>

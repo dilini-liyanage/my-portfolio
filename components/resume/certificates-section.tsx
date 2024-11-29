@@ -36,10 +36,8 @@ function CertificateSection() {
   return (
     <div>
       <div className="text-fontGray">
-        The volunteering experiences that I have gained over the years have
-        taught me the importance of teamwork, communication, and adaptability.
-        These experiences have not only enhanced my skills but also shaped my
-        approach to problem-solving and decision-making.
+        My certifications showcase my commitment to learning and growing my
+        skills, building a strong foundation for my professional journey.
       </div>
       <div className="grid grid-rows-4 gap-6 pt-12">
         {Certificate.map((item, index) => (
@@ -49,12 +47,12 @@ function CertificateSection() {
             </div>
             <div>
               <div className="flex gap-2">
-                <div className="text-2xl">{item.subject}</div>
+                <div className="text-lg">{item.subject}</div>
               </div>
               <div className="mb-2 text-sm text-fontGray">
                 {item.issuedDate}
               </div>
-              <div className="w-fit rounded-full border border-Secondary px-4 py-2 text-xs">
+              <div className="w-fit rounded-full border border-Secondary px-2 py-1 text-xs">
                 <a
                   href={item.credentialLink}
                   target="_blank"
@@ -64,7 +62,7 @@ function CertificateSection() {
                   <span> View Credential </span>
                   <span className="ml-2">
                     {' '}
-                    <ExternalLink className="h-4 w-4" />
+                    <ExternalLink className="h-3 w-3" />
                   </span>
                 </a>
               </div>
