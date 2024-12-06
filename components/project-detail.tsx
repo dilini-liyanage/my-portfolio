@@ -164,17 +164,17 @@ const ProjectDetail = ({
               {/* Features */}
               <div>
                 <h3 className="mb-2 text-lg font-semibold dark:text-white">
-                  Key Features
+                  My contributions
                 </h3>
                 <ul className="space-y-2">
-                  {project.features.map((feature) => (
+                  {project.my_contribution.map((my_contribution) => (
                     <li
-                      key={feature.title}
+                      key={my_contribution.title}
                       className="space-y-1 dark:text-gray-50"
                     >
-                      <h4 className="font-medium">{feature.title}</h4>
+                      <h4 className="font-medium">{my_contribution.title}</h4>
                       <p className="text-sm text-muted-foreground dark:text-gray-200">
-                        {feature.description}
+                        {my_contribution.description}
                       </p>
                     </li>
                   ))}

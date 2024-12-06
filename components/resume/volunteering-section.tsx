@@ -17,7 +17,7 @@ function VolunteeringSection() {
     },
     {
       position: 'Event Day Coordinator | FIT Sixes 2k24',
-      time: 'Sep 2024 - Present',
+      time: 'Nov 2024',
       society:
         'FIT Moments, Faculty of Information Technology, University of Moratuwa',
     },

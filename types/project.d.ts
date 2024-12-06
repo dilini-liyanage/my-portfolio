@@ -13,7 +13,7 @@ export type Project = {
   skills: {
     name: string;
   }[];
-  features: {
+  my_contribution: {
     title: string;
     description: string;
   }[];
