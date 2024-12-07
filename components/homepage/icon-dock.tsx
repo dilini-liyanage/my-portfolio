@@ -72,19 +72,19 @@ const DATA = {
       GitHub: {
         name: 'GitHub',
         tooltip: 'Git Hub Profile',
-        url: 'https://github.com/sampath-kumaramd',
+        url: 'https://github.com/dilini-liyanage',
         icon: Icons.github,
       },
       LinkedIn: {
         name: 'LinkedIn',
         tooltip: 'LinkedIn Profile',
-        url: 'https://www.linkedin.com/in/sampathkumaramd/',
+        url: 'https://www.linkedin.com/in/diliniliyanage/',
         icon: Icons.linkedin,
       },
       email: {
         name: 'Send Email',
         tooltip: 'Send Email',
-        url: 'mailto:mdskumara.info@gmail.com',
+        url: 'mailto:ldsliyanage99@gmail.com',
         icon: Icons.email,
       },
     },
@@ -106,7 +106,7 @@ export function IconDock() {
         <Dock direction="middle">
           <DockIcon className="!min-w-40">
             <a
-              href="/sampath-cv.pdf"
+              href="/dilini_CV.pdf"
               download="sampath-cv.pdf"
               aria-label={'Download CV'}
               className={cn(

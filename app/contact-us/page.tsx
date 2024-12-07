@@ -106,23 +106,18 @@ export default function ContactForm() {
   const contactInfo = [
     {
       icon: Phone,
-      text: '(+94) 76 093 7443',
-      href: 'tel:+94760937443',
+      text: '(+94) 76 2283 550',
+      href: 'tel:+94762283550',
     },
     {
       icon: Mail,
-      text: 'mdskumara.info@gmail.com',
-      href: 'mailto:mdskumara.info@gmail.com',
+      text: 'ldsliyanage99@gmail.com',
+      href: 'mailto:ldsliyanage99@gmail.com',
     },
     {
       icon: MapPin,
       text: 'Moratuwa, Sri Lanka',
       href: 'https://maps.google.com/?q=Moratuwa,+Sri+Lanka',
-    },
-    {
-      icon: MessageCircle,
-      text: 'sampath_kumara',
-      href: 'https://discord.com/users/sampath_kumara',
     },
   ];
 
