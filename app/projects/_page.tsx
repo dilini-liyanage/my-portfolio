@@ -254,7 +254,7 @@ const ProjectCard: React.FC<Project> = (project) => {
 
                   <div>
                     <div className="space-y-4">
-                      <Accordion type="single" collapsible className="w-full">
+                      {/* <Accordion type="single" collapsible className="w-full">
                         {project.features.map((feature, index) => (
                           <AccordionItem key={index} value={`item-${index}`}>
                             <AccordionTrigger className="font-medium">
@@ -265,7 +265,7 @@ const ProjectCard: React.FC<Project> = (project) => {
                             </AccordionContent>
                           </AccordionItem>
                         ))}
-                      </Accordion>
+                      </Accordion> */}
                       <div className="grid grid-cols-2 gap-4">
                         <div>
                           <h4 className="font-medium">Client</h4>
