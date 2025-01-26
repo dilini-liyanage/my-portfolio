@@ -106,7 +106,7 @@ export function IconDock() {
         <Dock direction="middle">
           <DockIcon className="!min-w-40">
             <a
-              href="/dilini_CV.pdf"
+              href="/Dilini_Liyanage_SE.pdf"
               download="sampath-cv.pdf"
               aria-label={'Download CV'}
               className={cn(

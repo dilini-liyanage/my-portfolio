@@ -161,4 +161,48 @@ export const projects: Project[] = [
       },
     ],
   },
+  {
+    name: 'BIM - Landing Page',
+    description:
+      'BIM is a global dating app connecting singles worldwide. It uses advanced matching algorithms, supports multiple languages, and ensures user safety through rigorous verification. Features include text, voice, and video communication, cultural exchange, and travel planning. BIM offers both free and premium plans, fostering a supportive community and meaningful cross-cultural connections.',
+    heroImage: '/projects/bim.png',
+    images: [
+      '/projects/bim-1.png',
+      '/projects/bim-2.png',
+      '/projects/bim-3.png',
+      '/projects/bim-mobile-1.png',
+      '/projects/bim-mobile-2.png',
+      '/projects/bim-mobile-3.png',
+    ],
+    skills: [
+      { name: 'Next.js' },
+      { name: 'Google Analytics' },
+      { name: 'TailwindCSS' },
+      { name: 'Shade cn' },
+    ],
+    hosted_link: 'https://bim-web.vercel.app/en',
+    client: 'Vincent',
+    role: 'Frontend Developer',
+    status: 'Completed',
+    startDate: '2024-07-09',
+    endDate: '2024-08-12',
+    my_contribution: [
+      {
+        title: 'Contact the company',
+        description: 'User can contact the company by providing their details.',
+      },
+      {
+        title: 'View the services',
+        description: 'User can view the services offered by the company.',
+      },
+      {
+        title: 'View the services',
+        description: 'User can view the services offered by the company.',
+      },
+      {
+        title: 'Responsive design',
+        description: 'The application is responsive and works on all devices.',
+      },
+    ],
+  },
 ];
