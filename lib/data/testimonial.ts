@@ -8,7 +8,7 @@ export const testimonials: Testimonial[] = [
     author: 'Tharindu Karunayaka',
     role: 'Technical Lead ',
     company: 'LiveRoom Technologies Pvt Ltd',
-    avatar: '/client/tharindu-TL.png',
+    avatar: '/client/tharindu-TL.jpg',
     date: '2024-09-24',
     verificationStatus: 'verified',
     projectType: 'Internship',
