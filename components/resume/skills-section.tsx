@@ -35,7 +35,7 @@ const SkillsSection: React.FC = () => {
           </button>
         ))}
       </div>
-      <div className="w-full overflow-x-hidden px-4 md:h-[32.5rem] md:overflow-y-auto">
+      <div className="w-full overflow-x-hidden px-0 md:h-[32.5rem] md:overflow-y-auto">
         <motion.div
           layout
           className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7"
@@ -57,7 +57,7 @@ const SkillsSection: React.FC = () => {
                   href={skill.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block rounded-lg bg-white p-4 shadow-lg transition-all dark:bg-gray-900"
+                  className="block rounded-lg bg-white p-4 shadow-lg transition-all dark:bg-gray-800"
                 >
                   <div className="flex flex-col items-center">
                     <skill.Icon className="h-10 w-10 text-Secondary" />

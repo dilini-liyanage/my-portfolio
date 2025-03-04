@@ -27,8 +27,8 @@ function EducationSection() {
       duration: '2019',
       subject: 'G.C.E. Advance Level',
       institute: "Pushpadana Girls' College Kandy",
-      stream: 'Biological Science Stream',
-      result: "2 A's , 1 C",
+      stream: '',
+      result: "Biological Science Stream - 2 A's , 1 C",
     },
     {
       duration: '2015',
@@ -53,14 +53,15 @@ function EducationSection() {
                   {/* <div className="h-5 w-5 rounded-full bg-Secondary"></div> */}
                   <FaDotCircle className="mt-1 h-3 w-3 text-Secondary" />
                 </div>
-
-                <p className="mb-2 text-xs text-Secondary">{item.duration}</p>
-                <h3 className="text-lg font-medium">{item.subject}</h3>
-                <p className="text-md mb-2 font-normal">{item.institute}</p>
-                {item.stream && (
-                  <p className="text-sm text-fontGray">{item.stream}</p>
-                )}
-                <p className="text-sm text-fontGray">{item.result}</p>
+                <div className="rounded-lg bg-gray-800 p-2 px-4">
+                  <p className="mb-2 text-xs text-Secondary">{item.duration}</p>
+                  <h3 className="text-lg font-medium">{item.subject}</h3>
+                  <p className="mb-0 text-sm text-fontGray">{item.institute}</p>
+                  {item.stream && (
+                    <p className="text-sm text-fontGray">{item.stream}</p>
+                  )}
+                  <p className="text-sm text-fontGray">{item.result}</p>
+                </div>
               </div>
             ))}
           </div>

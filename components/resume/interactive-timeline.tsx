@@ -52,7 +52,7 @@ function TimelineCard({
       {/* Experience card */}
       <motion.div
         whileHover={{ scale: 1.02 }}
-        className="group rounded-lg border border-gray-200 bg-white p-6 shadow-lg transition-all dark:border-gray-800 dark:bg-gray-900"
+        className="group rounded-lg border border-gray-200 bg-white p-6 shadow-lg transition-all dark:border-gray-800 dark:bg-gray-800"
       >
         <div className="mb-2 text-xs font-light text-Secondary">
           {experience.duration}

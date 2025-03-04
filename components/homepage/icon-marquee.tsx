@@ -37,7 +37,7 @@ const TechnologyCard = ({ img, name }: { img: string; name: string }) => {
         style={{ backfaceVisibility: 'hidden' }}
       >
         <Image
-          className="rounded-full"
+          className="rounded-lg p-1"
           width="80"
           height="40"
           sizes="(max-width: 768px) 40px, 80px"

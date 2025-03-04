@@ -24,18 +24,18 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       fontFamily: {
-        primary: 'var(--font-jetbrainsMono)',
+        primary: 'var(--font-roboto)',
       },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
-        background: 'hsl(var(--background))',
-        foreground: 'hsl(var(--foreground))',
-        bgPrimary: '#ffffff',
+        background: '#202124',
+        foreground: '#000000',
+        bgPrimary: '#dbdbdb',
         bgSecondery: '#4a4b4f',
         fontPrimary: '#1c1c22',
-        Secondary: '#df7ee0',
+        Secondary: '#d069d1',
         fontGray: '#b1b4ba',
         accent: {
           DEFAULT: '#00ff99',
@@ -151,7 +151,7 @@ const config: Config = {
       xl: '1280px',
     },
     fontFamily: {
-      primary: 'var(--font-jetbrainsMono)',
+      primary: 'var(--font-roboto)',
     },
   },
   plugins: [require('tailwindcss-animate')],

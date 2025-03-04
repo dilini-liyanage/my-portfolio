@@ -17,9 +17,9 @@ function AboutMeSection() {
         <div className="col-span-12 md:col-span-4">
           <div className="inset-0 z-10 flex justify-center transition-opacity duration-300">
             <Image
-              src="/dilini-pp.png"
+              src="/dilini-pp.jpg"
               alt="hero"
-              className="h-60 w-auto rounded-full"
+              className="h-48 w-auto rounded-full"
               width={600}
               height={600}
             />
@@ -41,7 +41,7 @@ function AboutMeSection() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5 }}
-        className="relative mt-8 rounded-xl border border-gray-200 bg-white p-4 dark:border-gray-800 dark:bg-gray-900"
+        className="relative mt-8 rounded-xl border border-gray-200 bg-white p-4 dark:border-gray-800 dark:bg-gray-800"
       >
         <h3 className="mb-4 text-sm font-medium text-gray-600 dark:text-gray-400">
           GitHub Contributions

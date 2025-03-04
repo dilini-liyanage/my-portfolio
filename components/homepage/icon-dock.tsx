@@ -103,11 +103,11 @@ export function IconDock() {
   return (
     <div>
       <TooltipProvider>
-        <Dock direction="middle">
+        <Dock direction="middle" className="dark:bg-[#4d5160]">
           <DockIcon className="!min-w-40">
             <a
               href="/Dilini_Liyanage_SE.pdf"
-              download="sampath-cv.pdf"
+              download="dilini-cv.pdf"
               aria-label={'Download CV'}
               className={cn(
                 buttonVariants({ variant: 'ghost', size: 'icon' }),

@@ -99,7 +99,7 @@ export default function RootLayout({
         >
           {/* Uncomment this to enable custom cursor */}
           {/* <CustomCursor /> */}
-          <AnimatedCursor
+          {/* <AnimatedCursor
             innerSize={15}
             outerSize={15}
             // rgb(80, 186, 191)
@@ -123,7 +123,7 @@ export default function RootLayout({
                 target: '.custom',
               },
             ]}
-          />
+          /> */}
           <Navbar />
           {children}
           <Toaster />

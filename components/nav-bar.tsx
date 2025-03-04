@@ -44,7 +44,7 @@ const Navbar = () => {
   `;
 
   return (
-    <div className="fixed left-0 right-0 top-0 z-50 bg-white dark:bg-background">
+    <div className="fixed left-0 right-0 top-0 z-50 bg-white dark:bg-foreground">
       <nav className="container mx-auto flex items-center justify-between py-4">
         <Link href="/">
           <motion.div
@@ -74,7 +74,7 @@ const Navbar = () => {
               </Link>
             </motion.div>
           ))}
-          <ThemeToggle />
+          {/* <ThemeToggle /> */}
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Link href="/contact-us">
               <ShinyButton>Contact me</ShinyButton>
