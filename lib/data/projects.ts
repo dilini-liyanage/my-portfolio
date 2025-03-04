@@ -191,6 +191,7 @@ export const projects: Project[] = [
       { name: 'TailwindCSS' },
       { name: 'Shade cn' },
       { name: 'Responsive design' },
+      { name: 'Time management' },
     ],
     hosted_link: 'https://dohm-v2.vercel.app/',
     client: 'DOHM',
