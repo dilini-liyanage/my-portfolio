@@ -15,7 +15,7 @@ function EducationSection() {
       duration: 'Expected in 2025',
       institute: 'University of Moratuwa',
       subject: 'BSc (Hons.) in Information Technology',
-      result: 'CGPA - 3.16',
+      result: 'CGPA - 3.2',
     },
     {
       duration: '2020',

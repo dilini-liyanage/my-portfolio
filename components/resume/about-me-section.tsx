@@ -17,9 +17,9 @@ function AboutMeSection() {
         <div className="col-span-12 md:col-span-4">
           <div className="inset-0 z-10 flex justify-center transition-opacity duration-300">
             <Image
-              src="/dilini-pp.png"
+              src="/dilini-pp.jpg"
               alt="hero"
-              className="h-60 w-auto rounded-full"
+              className="h-48 w-auto rounded-full"
               width={600}
               height={600}
             />
