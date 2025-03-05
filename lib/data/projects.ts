@@ -2,10 +2,10 @@ import { Project } from '@/types/project';
 
 export const projects: Project[] = [
   {
-    name: 'Kaiju Wallet - Blockchain Application',
+    name: 'Kaiju Wallet',
     description:
       'Kaiju Wallet is a cloud-managed Web3 non-custodial wallet solution built for highly scalable games and apps. With Kaiju Wallet developers can onboard users to a Web3 application easily at scale. Users can be onboarded with any social login or email and a wallet is created instantly for the users also the transaction signatures are done securely on the cloud creating a Web2 like user experience.',
-    heroImage: '/projects/kaiju-1.png',
+    heroImage: '/projects/kaiju.jpg',
     images: [
       '/projects/kaiju-1.png',
       '/projects/kaiju-2.png',
@@ -62,10 +62,10 @@ export const projects: Project[] = [
     ],
   },
   {
-    name: 'Medico - EPic ERP system',
+    name: 'Medico - ERP system',
     description:
       'A customized document management system was developed for Epic Medico company in South Africa to manage their fleet of medico-legal documents effectively. My contributions included implementing necessary Lambda functions, role-based authorization, database migration, pagination setup, MongoDB transactions, data encryption, and AWS service configuration.',
-    heroImage: '/projects/medico-1.png',
+    heroImage: '/projects/medico.jpg',
     images: [
       '/projects/medico-1.png',
       '/projects/medico-2.png',
@@ -110,9 +110,6 @@ export const projects: Project[] = [
       '/projects/fit-sixes-1.png',
       '/projects/fit-sixes-2.png',
       '/projects/fit-sixes-3.png',
-      '/projects/fit-sixes-mobile-1.png',
-      '/projects/fit-sixes-mobile-2.png',
-      '/projects/fit-sixes-mobile-3.png',
     ],
     skills: [
       { name: 'Next.js' },
@@ -144,10 +141,10 @@ export const projects: Project[] = [
     ],
   },
   {
-    name: 'Minosia AI Chat Application',
+    name: 'Minosia AI Chat App',
     description:
       'This is a website for FIT Sixes 2024, a sports event organized by FIT, IT Faculty of University of Moratuwa. It is a website that allows users to register for the Cricket Tournament, view the schedule, and view the results.',
-    heroImage: '/projects/minosia.png',
+    heroImage: '/projects/minosia.jpg',
     images: [
       '/projects/minosia-1.png',
       '/projects/minosia-2.png',
@@ -182,9 +179,6 @@ export const projects: Project[] = [
       '/projects/dohm-1.png',
       '/projects/dohm-2.png',
       '/projects/dohm-3.png',
-      '/projects/dohm-mobile-1.png',
-      '/projects/dohm-mobile-2.png',
-      '/projects/dohm-mobile-3.png',
     ],
     skills: [
       { name: 'Next.js' },
@@ -194,7 +188,7 @@ export const projects: Project[] = [
       { name: 'Time management' },
     ],
     hosted_link: 'https://dohm-v2.vercel.app/',
-    client: 'DOHM',
+    client: 'Fievrr client',
     role: 'Frontend Developer',
     status: 'Completed',
     startDate: 'Aug 2024',
@@ -223,9 +217,6 @@ export const projects: Project[] = [
       '/projects/bim-1.png',
       '/projects/bim-2.png',
       '/projects/bim-3.png',
-      '/projects/bim-mobile-1.png',
-      '/projects/bim-mobile-2.png',
-      '/projects/bim-mobile-3.png',
     ],
     skills: [
       { name: 'Next.js' },
@@ -255,10 +246,10 @@ export const projects: Project[] = [
     ],
   },
   {
-    name: 'Dinmaegler - Real Estate Landing Page',
+    name: 'Dinmaegler',
     description:
       'This system is a front-end web application for a real estate platform. Implemented user-friendly features allowing people to find houses for sale easily, view detailed property information, and access broker contact details. Focused on delivering an intuitive and visually appealing experience for home buyers.',
-    heroImage: '/projects/estate-1.png',
+    heroImage: '/projects/state.jpg',
     images: [
       '/projects/estate-1.png',
       '/projects/estate-2.png',
