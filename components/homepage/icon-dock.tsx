@@ -129,7 +129,7 @@ export function IconDock() {
                     aria-label={social.name}
                     className={cn(
                       buttonVariants({ variant: 'ghost', size: 'icon' }),
-                      'size-12 rounded-xl hover:bg-[#4ebcc2] dark:text-white dark:hover:bg-Secondary dark:hover:text-gray-50'
+                      'size-12 rounded-xl hover:bg-Secondary dark:text-white dark:hover:bg-Secondary dark:hover:text-gray-50'
                     )}
                   >
                     <social.icon className="size-4" />
