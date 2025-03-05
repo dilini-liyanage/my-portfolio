@@ -31,8 +31,8 @@ export const testimonials: Testimonial[] = [
     content:
       'I am grateful to have worked with Diilini on several Fiverr projects I received through my account. Together, we collaborated on notable projects such as the DOHM landing website, BIM dating website landing page, Real-Estate-Agent landing website, and the Minosia AI chat application frontend. Diilini has been an exceptional team member, always eager to learn and provide innovative suggestions that enhanced the quality of the work. Her dedication, hard work, and ability to deliver on time ensured client satisfaction, resulting in top ratings and excellent reviews. I highly recommend her to any organization seeking a reliable and skilled collaborator.',
     author: 'Sampath Kumara',
-    role: 'Fievrr Level 02 Seller',
-    company: 'Fievrr Freelancer',
+    role: 'Level 02 Seller',
+    company: ' Freelancer in Fievrr',
     avatar: '/client/sampath-fievrr.jpg',
     date: '2024-11-30',
     verificationStatus: 'verified',

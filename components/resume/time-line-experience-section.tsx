@@ -34,7 +34,7 @@ function TimeLineExperienceSection() {
       duration: 'Jan 2024 - Present',
       position: 'Freelance Web Developer',
       company: 'Part-time',
-      mode: 'Onsite',
+      mode: 'Online',
       skills: [
         { name: 'Serverless' },
         { name: 'NodeJs' },
