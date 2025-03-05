@@ -111,7 +111,7 @@ export function IconDock() {
               aria-label={'Download CV'}
               className={cn(
                 buttonVariants({ variant: 'ghost', size: 'icon' }),
-                'w-40 rounded-xl hover:w-44 hover:bg-[#4ebcc2] hover:px-2 hover:text-sm dark:text-white dark:hover:bg-Secondary dark:hover:text-gray-50'
+                'w-40 rounded-xl hover:w-44 hover:bg-Secondary hover:px-2 hover:text-sm dark:text-white dark:hover:bg-Secondary dark:hover:text-gray-50'
               )}
               onClick={handleResumeDownload}
             >
