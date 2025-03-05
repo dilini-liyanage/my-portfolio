@@ -86,7 +86,7 @@ const HeroSection: React.FC = () => {
                   className={`cursor-pointer flex-col items-center justify-center whitespace-nowrap px-4 py-2 shadow-md transition-colors md:px-5 md:py-3 ${
                     selectedSection === item.name
                       ? 'bg-Secondary dark:bg-Secondary'
-                      : 'bg-[#029ba313] dark:bg-[#029ba313]'
+                      : 'bg-[#029ba313] dark:bg-[#029ba31]'
                   }`}
                   gradientColor={
                     selectedSection === item.name ? '#ce00d1' : '#029ba313'
