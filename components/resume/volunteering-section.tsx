@@ -46,7 +46,7 @@ function VolunteeringSection() {
   ];
   return (
     <div>
-      <div className="text-fontGray">
+      <div className="text-gray-600 dark:text-fontGray">
         The volunteering experiences I’ve gained over the years have
         strengthened my soft skills, teaching me the value of teamwork,
         effective communication, and adaptability.
@@ -61,7 +61,9 @@ function VolunteeringSection() {
               <div className="flex gap-2">
                 <div className="text-lg font-medium">{item.position}</div>
               </div>
-              <div className="mb-1 text-xs text-fontGray">{item.time}</div>
+              <div className="mb-1 text-xs text-gray-500 dark:text-fontGray">
+                {item.time}
+              </div>
               <div className="text-sm">{item.society}</div>
             </div>
           </div>

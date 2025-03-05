@@ -7,7 +7,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
-import { GithubIcon, LinkIcon, ChevronUpIcon, CircleDot } from 'lucide-react';
+import { GithubIcon, Globe, ChevronUpIcon, CircleDot } from 'lucide-react';
 import Image from 'next/image';
 import { projects } from '@/lib/data/projects';
 import { useTheme } from 'next-themes';
@@ -47,8 +47,8 @@ const ProjectShowcase = () => {
                   id={`accordion-${idx}`}
                   className="w-full p-2 group-data-[state=open]:hidden"
                 >
-                  <div className="grid grid-cols-7 items-center gap-6">
-                    <div className="relative col-span-2 h-48 w-auto overflow-hidden rounded-md">
+                  <div className="grid grid-cols-1 items-center gap-6 md:grid-cols-2 lg:grid-cols-7">
+                    <div className="relative col-span-1 h-48 w-auto overflow-hidden rounded-md md:col-span-1 lg:col-span-2">
                       <Image
                         src={project.heroImage}
                         alt={project.name}
@@ -56,27 +56,27 @@ const ProjectShowcase = () => {
                         objectFit="cover"
                       />
                     </div>
-                    <div className="col-span-5 flex flex-col items-start text-left">
+                    <div className="col-span-1 flex flex-col items-start text-left md:col-span-1 lg:col-span-5">
                       <div className="flex w-full items-start justify-between">
-                        <h3 className="mb-2 text-xl font-medium text-white hover:text-Secondary">
+                        <h3 className="mb-2 text-xl font-medium text-black hover:text-Secondary dark:text-white">
                           {project.name}
                         </h3>
                       </div>
-                      <p className="mb-2 text-sm text-fontGray">
+                      <p className="mb-2 text-sm text-gray-600 dark:text-fontGray">
                         {project.description}
                       </p>
                       <p className="mb-3 flex flex-wrap gap-2">
                         {project.skills.map((skill) => (
                           <span
                             key={skill.name}
-                            className="rounded-full bg-gray-800 px-4 py-1 text-xs font-light text-gray-200"
+                            className="rounded-full bg-gray-200 px-4 py-1 text-xs font-light dark:bg-gray-800 dark:text-gray-200"
                           >
                             {skill.name}
                           </span>
                         ))}
                       </p>
                       <div className="flex gap-2">
-                        <div className="flex rounded-lg bg-Secondary px-2 py-1 text-sm text-white transition-transform">
+                        <div className="flex rounded-lg bg-Secondary px-2 py-1 text-sm text-white transition-transform hover:underline-offset-4">
                           View more
                         </div>
                         {project.github_link && (
@@ -98,7 +98,7 @@ const ProjectShowcase = () => {
                             className="rounded-full bg-Secondary p-2 text-white transition-transform hover:scale-110"
                             onClick={(e) => e.stopPropagation()}
                           >
-                            <LinkIcon className="h-4 w-4" />
+                            <Globe className="h-4 w-4" />
                           </a>
                         )}
                       </div>
@@ -106,9 +106,9 @@ const ProjectShowcase = () => {
                   </div>
                 </AccordionTrigger>
 
-                <AccordionContent className="max-h-[600px] border-l-2 border-Secondary border-opacity-50 group-data-[state=closed]:hidden">
+                <AccordionContent className="max-h-auto border-l-2 border-Secondary border-opacity-50 group-data-[state=closed]:hidden md:max-h-[600px]">
                   <div className="px-6 py-4">
-                    <div className="grid grid-cols-6 gap-8">
+                    <div className="grid gap-8 md:grid-cols-3 lg:grid-cols-6">
                       <div className="col-span-3">
                         <div className="relative aspect-video overflow-hidden rounded-xl">
                           <Image
@@ -122,9 +122,34 @@ const ProjectShowcase = () => {
 
                       <div className="col-span-3 w-auto space-y-4 overflow-y-auto">
                         <div className="flex items-start justify-between">
-                          <h4 className="mb-2 text-lg font-semibold text-Secondary">
-                            {project.name}
-                          </h4>
+                          <div className="flex gap-4">
+                            <h4 className="mb-2 text-lg font-semibold text-Secondary">
+                              {project.name}
+                            </h4>
+                            <div className="flex gap-4">
+                              {project.github_link && (
+                                <a
+                                  href={project.github_link}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="rounded-full bg-black p-2 text-white transition-transform hover:scale-110 dark:bg-white dark:text-black"
+                                >
+                                  <GithubIcon className="h-5 w-5" />
+                                </a>
+                              )}
+                              {project.hosted_link && (
+                                <a
+                                  href={project.hosted_link}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="rounded-full bg-Secondary p-2 text-white transition-transform hover:scale-110"
+                                >
+                                  <Globe className="h-5 w-5" />
+                                </a>
+                              )}
+                            </div>
+                          </div>
+
                           <button
                             onClick={() =>
                               document
@@ -138,11 +163,11 @@ const ProjectShowcase = () => {
                           </button>
                         </div>
                         <div className="max-h-[500px] space-y-4 overflow-y-auto">
-                          <p className="text-muted-foreground">
+                          <p className="text-gray-600 dark:text-gray-300">
                             {project.description}
                           </p>
                           <div>
-                            <h4 className="mb-2 text-lg font-medium text-white dark:text-gray-200">
+                            <h4 className="mb-2 text-lg font-medium text-gray-800 dark:text-white">
                               My Contributions
                             </h4>
                             <div>
@@ -153,7 +178,7 @@ const ProjectShowcase = () => {
                                 >
                                   <CircleDot className="mt-1 h-4 w-4 text-Secondary" />
                                   <div>
-                                    <p className="font-medium text-gray-300">
+                                    <p className="font-medium text-gray-700 dark:text-gray-300">
                                       {contribution.title}
                                     </p>
                                     <p className="text-xs font-light text-muted-foreground">
@@ -170,35 +195,12 @@ const ProjectShowcase = () => {
                               {project.skills.map((skill) => (
                                 <span
                                   key={skill.name}
-                                  className="rounded-full bg-gray-800 px-4 py-1 text-xs font-light text-gray-200"
+                                  className="rounded-full bg-gray-200 px-4 py-1 text-xs font-light dark:bg-gray-800 dark:text-gray-200"
                                 >
                                   {skill.name}
                                 </span>
                               ))}
                             </p>
-                          </div>
-
-                          <div className="flex gap-4">
-                            {project.github_link && (
-                              <a
-                                href={project.github_link}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="rounded-full bg-black p-2 text-white transition-transform hover:scale-110 dark:bg-white dark:text-black"
-                              >
-                                <GithubIcon className="h-5 w-5" />
-                              </a>
-                            )}
-                            {project.hosted_link && (
-                              <a
-                                href={project.hosted_link}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="rounded-full bg-Secondary p-2 text-white transition-transform hover:scale-110"
-                              >
-                                <LinkIcon className="h-5 w-5" />
-                              </a>
-                            )}
                           </div>
                         </div>
                       </div>

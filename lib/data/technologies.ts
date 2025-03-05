@@ -1,23 +1,7 @@
 export const technologies = [
   {
-    name: 'Angular',
-    img: '/icons/angular.png',
-  },
-  {
-    name: 'Blender',
-    img: '/icons/blender.png',
-  },
-  {
     name: 'CSS',
     img: '/icons/css.png',
-  },
-  {
-    name: 'DigitalOcean',
-    img: '/icons/digital-ocean.png',
-  },
-  {
-    name: 'Docker',
-    img: '/icons/docker.png',
   },
   {
     name: 'Figma',
@@ -52,10 +36,6 @@ export const technologies = [
     img: '/icons/nextjs.png',
   },
   {
-    name: 'Nest.js',
-    img: '/icons/nestjs.png',
-  },
-  {
     name: 'Node.js',
     img: '/icons/nodejs.png',
   },
@@ -64,28 +44,12 @@ export const technologies = [
     img: '/icons/python.png',
   },
   {
-    name: 'PostgreSQL',
-    img: '/icons/postgresql.png',
-  },
-  {
     name: 'React',
     img: '/icons/react.png',
   },
   {
-    name: 'Redis',
-    img: '/icons/redis.png',
-  },
-  {
-    name: 'Redux',
-    img: '/icons/redux.png',
-  },
-  {
     name: 'Sass',
     img: '/icons/sass.png',
-  },
-  {
-    name: 'Spring Boot',
-    img: '/icons/springboot.png',
   },
   {
     name: 'TypeScript',
@@ -94,5 +58,13 @@ export const technologies = [
   {
     name: 'Tailwind',
     img: '/icons/tailwind.png',
+  },
+  {
+    name: 'AWS',
+    img: '/icons/aws.jpg',
+  },
+  {
+    name: 'Serverless',
+    img: '/icons/serverless.png',
   },
 ];

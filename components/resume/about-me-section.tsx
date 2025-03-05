@@ -29,7 +29,7 @@ function AboutMeSection() {
           Hey there! It&apos;s me, Dilini.
         </div>
       </div>
-      <div className="mt-10 text-fontGray">
+      <div className="mt-10 text-gray-600 dark:text-fontGray">
         I am a dedicated, self-motivated, and hardworking undergraduate who is
         willing to gain hands-on experience with existing and emerging
         technologies in the field of information technology, seeking an

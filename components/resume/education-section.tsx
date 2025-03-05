@@ -39,7 +39,7 @@ function EducationSection() {
   ];
   return (
     <div>
-      <div className="text-fontGray">
+      <div className="text-gray-600 dark:text-fontGray">
         My education reflects a continuous journey of learning and growth,
         building the knowledge and skills essential for my professional
         development.
@@ -54,13 +54,17 @@ function EducationSection() {
                   <FaDotCircle className="mt-1 h-3 w-3 text-Secondary" />
                 </div>
 
-                <p className="mb-2 text-xs text-Secondary">{item.duration}</p>
+                <p className="mb-2 text-xs font-medium text-Secondary dark:font-light">
+                  {item.duration}
+                </p>
                 <h3 className="text-lg font-medium">{item.subject}</h3>
                 <p className="text-md mb-2 font-normal">{item.institute}</p>
                 {item.stream && (
                   <p className="text-sm text-fontGray">{item.stream}</p>
                 )}
-                <p className="text-sm text-fontGray">{item.result}</p>
+                <p className="text-sm text-gray-500 dark:text-fontGray">
+                  {item.result}
+                </p>
               </div>
             ))}
           </div>

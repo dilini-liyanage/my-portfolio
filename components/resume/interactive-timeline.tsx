@@ -54,7 +54,7 @@ function TimelineCard({
         whileHover={{ scale: 1.02 }}
         className="group rounded-lg border border-gray-200 bg-white p-6 shadow-lg transition-all dark:border-gray-800 dark:bg-gray-900"
       >
-        <div className="mb-2 text-xs font-light text-Secondary">
+        <div className="mb-2 text-xs font-medium text-Secondary dark:font-light">
           {experience.duration}
         </div>
         <h3 className="text-xl font-medium transition-colors group-hover:text-Secondary">

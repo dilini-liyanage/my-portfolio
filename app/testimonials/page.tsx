@@ -45,7 +45,7 @@ const TestimonialCard: React.FC<Testimonial> = ({
 
   return (
     <div className="perspective-1000 h-full">
-      <Card className="relative h-full transform overflow-hidden rounded-xl border border-gray-100/20 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl transition-all duration-500 hover:shadow-[0_0_40px_rgba(125,125,125,0.1)] dark:border-gray-50/[.05] dark:from-gray-900/50 dark:to-gray-900/30">
+      <Card className="relative h-full transform overflow-hidden rounded-xl border border-gray-100/20 bg-gradient-to-br from-black/5 to-black/10 backdrop-blur-xl transition-all duration-500 hover:shadow-[0_0_40px_rgba(125,125,125,0.1)] dark:border-gray-50/[.05] dark:from-gray-900/50 dark:to-gray-900/30">
         <div className="absolute -right-12 -top-12 h-32 w-32 rotate-45 bg-gradient-to-br from-bgPrimary/20 to-transparent blur-2xl" />
         <div className="absolute -bottom-12 -left-12 h-32 w-32 rotate-45 bg-gradient-to-tr from-Secondary/20 to-transparent blur-2xl" />
 
@@ -191,7 +191,7 @@ const ClientTestimonialsCarousel: React.FC = () => {
   return (
     <section className="relative flex min-h-screen flex-col justify-center pt-36 dark:bg-background md:pt-0">
       <div className="container mx-auto px-4">
-        <h2 className="mb-12 text-center">
+        <h2 className="mb-12 mt-6 text-center md:mt-12">
           <span className="bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-4xl font-bold text-transparent dark:text-gray-200 sm:text-5xl">
             What people say about me
           </span>

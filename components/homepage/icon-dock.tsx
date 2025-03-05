@@ -106,8 +106,8 @@ export function IconDock() {
         <Dock direction="middle">
           <DockIcon className="!min-w-40">
             <a
-              href="/Dilini_Liyanage_SE.pdf"
-              download="sampath-cv.pdf"
+              href="/Dilini_liyanage_Software_Engineer.pdf"
+              download="Dilini_liyanage_Software_Engineer.pdf"
               aria-label={'Download CV'}
               className={cn(
                 buttonVariants({ variant: 'ghost', size: 'icon' }),

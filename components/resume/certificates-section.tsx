@@ -35,7 +35,7 @@ function CertificateSection() {
   ];
   return (
     <div>
-      <div className="text-fontGray">
+      <div className="text-gray-600 dark:text-fontGray">
         My certifications showcase my commitment to learning and growing my
         skills, building a strong foundation for my professional journey.
       </div>
@@ -49,7 +49,7 @@ function CertificateSection() {
               <div className="flex gap-2">
                 <div className="text-lg">{item.subject}</div>
               </div>
-              <div className="mb-2 text-sm text-fontGray">
+              <div className="mb-2 text-sm text-gray-500 dark:text-fontGray">
                 {item.issuedDate}
               </div>
               <div className="w-fit rounded-full border border-Secondary px-2 py-1 text-xs">

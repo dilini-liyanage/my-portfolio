@@ -47,6 +47,23 @@ function TimeLineExperienceSection() {
       ],
     },
     {
+      duration: 'Sep 2024 - Feb 2025',
+      position: 'Backend Developer',
+      company: 'Kyno Labs',
+      mode: 'Online . Part-time',
+      skills: [
+        { name: 'Serverless Architecture' },
+        { name: 'NodeJs' },
+        { name: 'MongoDB' },
+        { name: 'AWS' },
+        { name: 'Time Management' },
+        { name: 'Teamwork' },
+        { name: 'Communication' },
+        { name: 'Problem Solving' },
+        { name: 'Adaptability' },
+      ],
+    },
+    {
       duration: 'Mar 2020 - Jun 2021',
       position: 'IT Assistant',
       company: 'Ocnet e Solutions, Aranayake Rd, Alupotha, Ussapitiya ',
@@ -65,7 +82,7 @@ function TimeLineExperienceSection() {
 
   return (
     <div className="space-y-8">
-      <div className="text-fontGray">
+      <div className="text-gray-600 dark:text-fontGray">
         My work experience, spanning over 3 years, has been a journey of growth,
         learning, and innovation.
       </div>
