@@ -7,6 +7,7 @@ function TimeLineExperienceSection() {
     company: string;
     companyLink?: string;
     mode: string;
+    contribution?: { name: string }[];
     skills: { name: string }[];
   }
 
@@ -17,6 +18,17 @@ function TimeLineExperienceSection() {
       company: 'LiveRoom Technologies (Pvt) Ltd. · Full-time',
       mode: 'Onsite',
       companyLink: 'https://www.liveroom.xyz/',
+      contribution: [
+        {
+          name: 'Contributed to the design and implementation of Lambda functions, wrote database queries, configured AWS services, tested solutions, implemented OAuth setups, integrated blockchain functionalities, and created technical documentation using Nextra.',
+        },
+        {
+          name: ' Practiced agile methodologies through daily stand-ups, code reviews, and conducting and participating in knowledge transfer sessions to ensure quality outcomes.',
+        },
+        {
+          name: 'Collaborated with QA and DevOps team members for successful feature delivery.',
+        },
+      ],
       skills: [
         { name: 'Serverless' },
         { name: 'NodeJs' },
@@ -35,6 +47,20 @@ function TimeLineExperienceSection() {
       position: 'Freelance Web Developer',
       company: 'Part-time',
       mode: 'Online',
+      contribution: [
+        {
+          name: 'Engaged in various commercial projects on the Fiverr platform as a freelance web developer. ',
+        },
+        {
+          name: 'Contributed to the development of responsive front-end websites. ',
+        },
+        {
+          name: 'Delivered high-quality projects tailored to client specifications.',
+        },
+        {
+          name: 'Practiced effective time management to ensure on-time delivery, contributing to successful project completions.',
+        },
+      ],
       skills: [
         { name: 'Serverless' },
         { name: 'NodeJs' },
@@ -51,6 +77,17 @@ function TimeLineExperienceSection() {
       position: 'Backend Developer',
       company: 'Kyno Labs',
       mode: 'Online . Part-time',
+      contribution: [
+        {
+          name: 'Contributed to implementing Lambda functions, wrote database queries, and configured AWS services.',
+        },
+        {
+          name: 'Utilized GitHub for version control and conducted API testing for robust functionality.',
+        },
+        {
+          name: 'Demonstrated soft skills such as time management through timely task completion and effective teamwork.',
+        },
+      ],
       skills: [
         { name: 'Serverless Architecture' },
         { name: 'NodeJs' },

@@ -6,5 +6,6 @@ export interface Timeline {
     companyLink?: string;
     mode: string;
     skills: { name: string }[];
+    contribution?: { name: string }[];
   }[];
 }

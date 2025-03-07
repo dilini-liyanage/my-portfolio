@@ -68,6 +68,20 @@ function TimelineCard({
         >
           {experience.company} . {experience.mode}
         </a>
+        {experience.contribution && (
+          <div className="mt-2">
+            <h4 className="text-sm font-medium text-gray-600 dark:text-gray-300">
+              Contributions:
+            </h4>
+            <ul className="list-disc pl-5 text-sm font-light text-gray-600 dark:text-gray-400">
+              {experience.contribution.map(
+                (contribution, contributionIndex) => (
+                  <li key={contributionIndex}>{contribution.name}</li>
+                )
+              )}
+            </ul>
+          </div>
+        )}
 
         {/* Skills tags */}
         <div className="mt-3 flex flex-wrap gap-2">
