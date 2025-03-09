@@ -15,11 +15,11 @@ export const projects: Project[] = [
     skills: [
       { name: 'Serverless Architecture' },
       { name: 'Blockchain' },
-      { name: 'Node.js' },
+      { name: 'NodeJs' },
       { name: 'Python' },
       { name: 'AWS' },
       { name: 'MongoDB' },
-      { name: 'Next.js' },
+      { name: 'NextJs' },
       { name: 'TailwindCSS' },
     ],
     hosted_link: 'https://www.kaiju3d.com/',
@@ -74,7 +74,7 @@ export const projects: Project[] = [
     ],
     skills: [
       { name: 'Serverless Architecture' },
-      { name: 'Node.js' },
+      { name: 'NodeJs' },
       { name: 'AWS' },
       { name: 'MongoDB' },
     ],
@@ -112,7 +112,8 @@ export const projects: Project[] = [
       '/projects/fit-sixes-3.png',
     ],
     skills: [
-      { name: 'Next.js' },
+      { name: 'NextJs' },
+      { name: 'TypeScript' },
       { name: 'TailwindCSS' },
       { name: 'Shade cn' },
       { name: 'Responsive design' },
@@ -151,7 +152,9 @@ export const projects: Project[] = [
       '/projects/minosia-3.png',
     ],
     skills: [
-      { name: 'Next.js' },
+      { name: 'NextJs' },
+      { name: 'TypeScript' },
+      { name: 'TypeScript' },
       { name: 'TailwindCSS' },
       { name: 'Shade cn' },
       { name: 'Responsive design' },
@@ -181,7 +184,8 @@ export const projects: Project[] = [
       '/projects/dohm-3.png',
     ],
     skills: [
-      { name: 'Next.js' },
+      { name: 'NextJs' },
+      { name: 'TypeScript' },
       { name: 'TailwindCSS' },
       { name: 'Shade cn' },
       { name: 'Responsive design' },
@@ -219,7 +223,8 @@ export const projects: Project[] = [
       '/projects/bim-3.png',
     ],
     skills: [
-      { name: 'Next.js' },
+      { name: 'NextJs' },
+      { name: 'TypeScript' },
       { name: 'Google Analytics' },
       { name: 'TailwindCSS' },
       { name: 'Shade cn' },
@@ -258,7 +263,7 @@ export const projects: Project[] = [
       '/projects/estate-5.png',
     ],
     skills: [
-      { name: 'Next.js' },
+      { name: 'ReactJs' },
       { name: 'TailwindCSS' },
       { name: 'Shade cn' },
       { name: 'Web development' },
