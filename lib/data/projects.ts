@@ -143,7 +143,7 @@ export const projects: Project[] = [
   {
     name: 'Minosia AI Chat App',
     description:
-      'This is a website for FIT Sixes 2024, a sports event organized by FIT, IT Faculty of University of Moratuwa. It is a website that allows users to register for the Cricket Tournament, view the schedule, and view the results.',
+      'Minosia is an AI-powered application which is features include Assistant for chatting and finding information, a Regulation Review section for document analysis, and a Library for storing and managing documents. My contribution was developing the frontend for this application.',
     heroImage: '/projects/minosia.jpg',
     images: [
       '/projects/minosia-1.png',
