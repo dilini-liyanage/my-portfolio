@@ -73,7 +73,7 @@ function TimeLineExperienceSection() {
       ],
     },
     {
-      duration: 'Sep 2024 - Feb 2025',
+      duration: 'Oct 2024 - Feb 2025',
       position: 'Backend Developer',
       company: 'Kyno Labs',
       mode: 'Online . Part-time',
