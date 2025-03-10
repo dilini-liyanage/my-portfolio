@@ -43,7 +43,7 @@ function TimeLineExperienceSection() {
       ],
     },
     {
-      duration: 'Jan 2024 - Present',
+      duration: 'Mar 2024 - Jan 2025',
       position: 'Freelance Web Developer',
       company: 'Part-time',
       mode: 'Online',
