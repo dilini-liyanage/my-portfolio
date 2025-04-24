@@ -154,7 +154,6 @@ export const projects: Project[] = [
     skills: [
       { name: 'NextJs' },
       { name: 'TypeScript' },
-      { name: 'TypeScript' },
       { name: 'TailwindCSS' },
       { name: 'Shade cn' },
       { name: 'Responsive design' },
@@ -170,6 +169,42 @@ export const projects: Project[] = [
         title: 'Convert the given UI design',
         description:
           'Developed a web application based on the provided UI design, ensuring pixel-perfect implementation. The main sections converted include the sidebar, header, Assistant page, Regulation Review page, and Library page, maintaining functionality and visual consistency.',
+      },
+    ],
+  },
+  {
+    name: 'Fincore Landing page',
+    description:
+      'Fincore is a fintech company that provides a platform for managing and analyzing financial data. My contribution was developing the frontend for this application.',
+    heroImage: '/projects/fincore.jpg',
+    images: [
+      '/projects/fincore-1.png',
+      '/projects/fincore-2.png',
+      '/projects/fincore-3.png',
+      '/projects/fincore-4.png',
+      '/projects/fincore-5.png',
+      '/projects/fincore-6.png',
+      '/projects/fincore-7.png',
+    ],
+    skills: [
+      { name: 'NextJs' },
+      { name: 'TypeScript' },
+      { name: 'Framer Motion' },
+      { name: 'TailwindCSS' },
+      { name: 'Shade cn' },
+      { name: 'Responsive design' },
+    ],
+    hosted_link: 'https://fincore-roan.vercel.app/',
+    client: 'Fievrr client',
+    role: 'Frontend Developer',
+    status: 'Completed',
+    startDate: 'Mar 2025',
+    endDate: 'Mar 2025',
+    my_contribution: [
+      {
+        title: 'Convert the given UI design',
+        description:
+          'Developed a web application based on the provided UI design, ensuring pixel-perfect implementation with responsive design. The main sections converted include the header, About us, Features, Pricing, and Footer with animations.',
       },
     ],
   },
